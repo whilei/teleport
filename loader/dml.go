@@ -183,9 +183,9 @@ func (l *Loader) resumeDMLEvent(event *database.Event, batch *database.Batch) er
 	}
 
 	tx = l.db.NewTransaction()
-  
+
 	err = l.openSelectCursor(tx, schema, class)
-	
+
 	if err != nil {
 		return err
 	}

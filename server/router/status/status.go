@@ -17,7 +17,7 @@ func New() *statusRouter {
 }
 
 func (s *statusRouter) status(w http.ResponseWriter, r *http.Request) error {
-	fmt.Fprintln(w, "ok");
+	fmt.Fprintln(w, "ok")
 	return nil
 }
 
